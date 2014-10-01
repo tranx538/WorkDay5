@@ -1,10 +1,12 @@
-﻿Public Class Form1
+﻿Option Strict On
+
+Public Class Form1
 
     Private Sub btnShowRecipe_Click(sender As Object, e As EventArgs) Handles btnShowRecipe.Click
-        CookChicken()
-        PullTheMeat()
-        AddVeggies()
-        AddNoodles()
+        Call CookChicken()
+        Call PullTheMeat()
+        Call AddVeggies()
+        Call AddNoodles()
         MessageBox.Show("Simmer on medium low for 8-10 min")
     End Sub
 
@@ -21,7 +23,7 @@
     End Sub
 
     Sub AddVeggies()
-        CutVeggies()
+        Call CutVeggies()
         MessageBox.Show("Add cut veggies to the broth")
     End Sub
 
