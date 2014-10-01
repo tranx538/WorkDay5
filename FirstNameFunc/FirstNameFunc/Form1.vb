@@ -4,7 +4,7 @@ Public Class Form1
 
     Private Sub btnDetermine_Click(sender As System.Object, e As System.EventArgs) Handles btnDetermine.Click
         Dim name As String
-        name = txtFullName.Text
+        name = txtFullName.Text.Trim()
         txtFirstName.Text = FirstName(name)
 
     End Sub
